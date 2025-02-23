@@ -1,3 +1,3 @@
-from repoprompt import cli
+from repoprompt.repoprompt import cli
 
 cli()
