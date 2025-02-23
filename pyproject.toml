@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "repoprompt"
+version = "0.1.0"
+authors = [
+    { name = "Michael Halls-Moore", email = "mike@quarkgluon.com" },
+]
+description = "Repoprompt is used to concatenate an entire code repository's files into a suitable text prompt for use with Large Language Models (LLM)."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+	"click>=8.0.0"    
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pyfakefs>=5.0.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mhallsmoore/repoprompt"
+"Bug Tracker" = "https://github.com/mhallsmoore/repoprompt"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/repoprompt"]
