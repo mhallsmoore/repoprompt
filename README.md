@@ -18,7 +18,7 @@ Repoprompt is a Python library that concatenates an entire code repository's fil
 You can install repoprompt using pip:
 
 ```bash
-pip install repoprompt
+pip install git+https://github.com/mhallsmoore/repoprompt.git@main
 ```
 
 ## Usage
